@@ -1,0 +1,10 @@
+.profile__container {
+    display: flex;
+    align-items: baseline;
+}
+
+@media all and (max-width: 610px) {
+    .profile__container {
+        justify-content: center;
+    }
+}

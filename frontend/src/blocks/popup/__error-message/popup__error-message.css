@@ -1,0 +1,19 @@
+.popup__error-message {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    margin: 0 auto;
+    min-height: 30px;
+    max-width: 358px;
+    padding-top: 5px;
+}
+
+@media all and (max-width: 765px) {
+    .popup__error-message {
+        max-width: 238px;
+        
+    }
+}

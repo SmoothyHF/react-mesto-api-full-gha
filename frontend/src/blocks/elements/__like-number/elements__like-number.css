@@ -1,0 +1,12 @@
+.elements__like-count {
+    width: 10px;
+    height: 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0;
+    justify-content: center;
+    align-self: center;
+}

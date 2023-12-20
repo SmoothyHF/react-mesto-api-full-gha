@@ -1,0 +1,17 @@
+.auth__button_login {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(204,204,204,1);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    transition: 0.6s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.auth__button_login:hover {
+    opacity: 0.6;
+}

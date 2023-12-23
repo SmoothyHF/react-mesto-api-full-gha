@@ -4,8 +4,6 @@ const UserModel = require('../models/user');
 const BadRequestError = require('../errors/badRequest-error');
 const NotFoundError = require('../errors/notFound-error');
 const ConflictError = require('../errors/conflict-error');
-// const ForbiddenError = require('../errors/Forbidden-error');
-// const verifyToken = require('../middlewares/verifyToken');
 
 const { JWT_SECRET = 'SECRET_KEY' } = process.env;
 

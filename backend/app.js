@@ -19,13 +19,9 @@ mongoose.connect(`${MONGO_URL}`, {
   useNewUrlParser: true,
 }).then();
 
-// mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
-//   useNewUrlParser: true,
-// }).then();
-
 const app = express();
+
 app.use(cors());
-// const port = 3000;
 
 app.use(express.json());
 

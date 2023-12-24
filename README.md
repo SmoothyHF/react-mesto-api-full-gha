@@ -11,6 +11,6 @@
 
 IP-адрес 51.250.27.251
 
-Frontend http://mesto-smoothy.nomoredomainsmonster.ru/api
+Frontend https://mesto-smoothy.nomoredomainsmonster.ru/api
 
-Backend http://mesto-smoothy.nomoredomainsmonster.ru
+Backend https://mesto-smoothy.nomoredomainsmonster.ru

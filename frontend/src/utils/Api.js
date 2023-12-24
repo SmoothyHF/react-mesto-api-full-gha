@@ -15,14 +15,14 @@ export default class Api {
     }
 
     getInitialCards() {
-        return fetch(`${this._url}/cards/`, {
+        return fetch(`${this._url}/cards`, {
             headers: this._headers,
         })
             .then(this._checkResponse)
     }
 
     changeUserInfo({ name, about }) {
-        return fetch(`${this._url}/users/me/`, {
+        return fetch(`${this._url}/users/me`, {
             method: 'PATCH',
             headers: this._headers,
             body: JSON.stringify({
@@ -35,14 +35,14 @@ export default class Api {
     }
 
     getUserInfo() {
-        return fetch(`${this._url}/users/me/`, {
+        return fetch(`${this._url}/users/me`, {
             headers: this._headers,
         })
             .then(this._checkResponse)
     }
 
     changeAvatar({ avatar }) {
-        return fetch(`${this._url}/users/me/avatar/`, {
+        return fetch(`${this._url}/users/me/avatar`, {
             method: 'PATCH',
             headers: this._headers,
             body: JSON.stringify({
@@ -53,7 +53,7 @@ export default class Api {
     }
 
     addCard({ title, link }) {
-        return fetch(`${this._url}/cards/`, {
+        return fetch(`${this._url}/cards`, {
             method: 'POST',
             headers: this._headers,
             body: JSON.stringify({
@@ -73,7 +73,7 @@ export default class Api {
     }
 
     likeCard(cardId) {
-        return fetch(`${this._url}/cards/${cardId}/likes/`, {
+        return fetch(`${this._url}/cards/${cardId}/likes`, {
             method: 'PUT',
             headers: this._headers,
         })
@@ -81,7 +81,7 @@ export default class Api {
     }
 
     disLikeCard(cardId) {
-        return fetch(`${this._url}/cards/${cardId}/likes/`, {
+        return fetch(`${this._url}/cards/${cardId}/likes`, {
             method: 'DELETE',
             headers: this._headers,
         })

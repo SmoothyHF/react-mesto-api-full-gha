@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 51.250.27.251
 
-Frontend https://...
+Frontend http://mesto-smoothy.nomoredomainsmonster.ru/api
 
-Backend https://...
+Backend http://mesto-smoothy.nomoredomainsmonster.ru

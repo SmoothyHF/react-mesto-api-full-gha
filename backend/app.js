@@ -57,7 +57,7 @@ app.post('/signin', celebrate({
   }),
 }), login);
 
-app.use(auth);
+app.use('/api/', auth);
 
 app.use('/api/', appRouter);
 

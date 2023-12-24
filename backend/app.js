@@ -21,14 +21,14 @@ mongoose.connect(`${MONGO_URL}`, {
 
 const app = express();
 
-const corsOptions = {
-  credentials: true,
-  origin: 'http://mesto-smoothy.nomoredomainsmonster.ru/',
-  allowedHeaders: ['Content-Type'],
-  optionsSuccessStatus: 200,
-};
+// const corsOptions = {
+//   credentials: true,
+//   origin: 'http://mesto-smoothy.nomoredomainsmonster.ru/',
+//   allowedHeaders: ['Content-Type'],
+//   optionsSuccessStatus: 200,
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.json());
 

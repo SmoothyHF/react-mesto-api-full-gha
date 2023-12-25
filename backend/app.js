@@ -60,7 +60,7 @@ app.post('/signin', celebrate({
 app.use(auth);
 
 // app.use('/api/', appRouter);
-app.use('/api', appRouter);
+app.use(appRouter);
 
 app.use((req, res, next) => next(new NotFoundError('Указан неверный адрес')));
 

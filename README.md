@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.27.251
+IP 51.250.27.251
 
 Frontend https://mesto-smoothy.nomoredomainsmonster.ru
 

@@ -36,7 +36,10 @@ function App() {
       .then(userData => {
         setCurrentUser(userData);
       })
-      .catch(console.error)
+      // .catch(console.error)
+      .catch((err) => {
+        console.log(err);
+      })
   }, [])
 
   React.useEffect(() => {

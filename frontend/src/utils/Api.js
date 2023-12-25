@@ -91,8 +91,8 @@ export default class Api {
 
 export const api = new Api({
     // url: 'https://mesto.nomoreparties.co/v1/cohort-68',
-    // url: 'http://localhost:3000',
-    url: 'http://mesto-smoothy.nomoredomainsmonster.ru',
+    url: 'http://localhost:3000',
+    // url: 'http://mesto-smoothy.nomoredomainsmonster.ru',
     headers: {
         authorization: `Bearer ${token}`,
         // authorization: '5e479d65-5855-47a5-9b21-4f46b81367c4',

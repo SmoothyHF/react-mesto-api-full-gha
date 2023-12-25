@@ -34,11 +34,11 @@ app.use(express.json());
 
 app.use(requestLogger);
 
-app.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+// app.get('/crash-test', () => {
+//   setTimeout(() => {
+//     throw new Error('Сервер сейчас упадёт');
+//   }, 0);
+// });
 
 app.post('/signup', celebrate({
   body: Joi.object().keys({
@@ -57,9 +57,10 @@ app.post('/signin', celebrate({
   }),
 }), login);
 
-app.use('/api/', auth);
+app.use(auth);
 
-app.use('/api/', appRouter);
+// app.use('/api/', appRouter);
+app.use(appRouter);
 
 app.use((req, res, next) => next(new NotFoundError('Указан неверный адрес')));
 
